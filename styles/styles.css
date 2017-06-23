@@ -1,0 +1,18 @@
+#calculator{
+	margin:auto;
+	width:400px;
+	height:500px;
+	border:solid black 1px;
+	border-radius:4px;
+}
+
+#display{
+	margin:auto;
+	width:350px;
+	height:80px;
+	border:solid black 1px;
+	border-radius:1px;
+	position:relative;
+	top:10px;
+
+}
