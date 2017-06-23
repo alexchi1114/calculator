@@ -21,24 +21,21 @@ function calculation(string){
 
 $(document).ready(function(){
 
-	$display_text = ''
-
-	$('#equal').click(function(){
-		$display_text = eval($display_text);
-		$('#display').text($display_text);
-	})
+	$display_text = '';
 
 	$('.button').click(function(){
-		$display_text += $(this).text();
+		$display_text += $(this).text().replace(/\s/g, '');
 		$('#display').text($display_text);
 	})
-
-
 
 	$('#clear').click(function(){
 		$display_text = ''
 		$('#display').text($display_text);
 	})
 
+	$('#equal').click(function(){
+		$display_text = eval($display_text)
+		$('#display').text($display_text);
+	})
 
 })
